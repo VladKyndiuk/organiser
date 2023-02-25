@@ -1,0 +1,19 @@
+.anima{
+    animation: opacityAnimation 0.5s ease-in-out;
+}
+.title{
+    font-size: 100px;
+    color: #2e3f5d;
+}
+
+
+
+
+@keyframes opacityAnimation{
+    0%{
+      opacity: 0%;
+    }
+    100%{
+      opacity: 100%;
+    }
+  }

@@ -1,0 +1,111 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sidebar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background: #292f4c;
+    padding: 6px 14px;
+    z-index: 99;
+    transition: all 0.5s ease;
+  }
+  .logo_name{
+    padding: 10px 0;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    border-bottom:1px #fff solid;
+  }
+
+  .nav_cell{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: #FFF;
+  }
+
+  .sidebar li a {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+  }
+
+  .icon{
+    width: 200px;
+    height: 200px;
+    fill: #292f4c;
+  }
+
+  .icon_small{
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFF;
+    transition: all 0.5s ease;
+  }
+  .links_name{
+    font-size: 20px;
+  }
+  ul{
+    height: 100%;
+    margin-top: 20px;
+    padding: 0 !important;
+  }
+  li{
+    margin: 5px 0;
+    text-decoration: none;
+    list-style:none ;
+    height: 50px;
+  }
+  
+
+  .nav_cell:hover{
+    background-color: #fff;
+    color: #292f4c;
+  }
+  .sidebar li a:hover i{
+    color: #292f4c;
+  }
+
+  .active_page{
+    background-color: #FFF;
+  }
+
+  /* SECTION */
+  .content_section{
+    position: relative;
+    background-color: #fff;
+    height: 100vh;
+    left: 250px;
+    width: calc(100% - 250px);
+  }
+  .section_title{
+    font-size: 40px;
+    text-align: center;
+    color: #292f4c;
+  }
+  .content{
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .radio_group{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #button_check_site{
+    margin-top: 20px;
+  }

@@ -1,7 +1,7 @@
 import './Loader.scss';
 function Loader() {
     return ( 
-        <div className="body">
+        <div className="bodyLoader">
             
                 <div class="lds-ring"><div></div><div></div><div></div><div></div></div> 
             

@@ -1,0 +1,93 @@
+body{
+  background-color: #fff;
+}
+.courses-body{
+    height: 100%;
+    width: 100%;
+    padding: 10px 10px;
+    padding-top:  10px;
+    justify-content: center;
+    animation: opacityAnimation 0.5s ease-in-out;
+    .Title{
+        font-size: 40px;
+        text-align: center;
+    }
+}
+.modal_container{
+    display: flex;
+    flex-direction: column;
+    .Title{
+      color: #2e3f5d;
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+    .form-input{
+      width: 100%;
+      font-size: 20px;
+      border-bottom: 2px #eaf1f7 solid;
+      margin-bottom: 10px;
+      height: 40px;
+      transition: all 0.5s ease;
+      &::-webkit-inner-spin-button{
+          -webkit-appearance: none;
+      }
+      &:focus{
+          border-bottom: 2px #2373fd solid;
+      }
+  }
+}
+
+
+
+.warning{
+  content: '\260E';
+  opacity: 0;
+  // text-align: center;
+  color: #bb3838;
+  transition: all 0.5s ease;
+}
+.show{
+  opacity: 1;
+}
+
+
+
+.coursesCellInner{
+    padding: 10px 10px;
+    width: 20%;
+}
+
+.coursesCellContainer{
+    display: flex;
+    flex-wrap: wrap;
+    // gap: 10px;
+    height: 100%;
+    width: 100%;
+    // justify-content: center;
+}
+
+// ANIMATION
+
+.coursesCellInner-enter {
+    opacity: 0;
+  }
+.coursesCellInner-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+.coursesCellInner-exit {
+    opacity: 1;
+  }
+.coursesCellInner-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+  }
+
+  @keyframes opacityAnimation{
+    0%{
+      opacity: 0%;
+    }
+    100%{
+      opacity: 100%;
+    }
+  }

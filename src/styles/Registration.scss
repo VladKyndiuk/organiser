@@ -12,7 +12,8 @@ $light-base-color: #cce5ff;
     font-family: 'Roboto', sans-serif;
 }
 body{
-    background-color: $base-color;
+    // background-color: $base-color;
+    background-color: #fff;
 }
 
 .card{
@@ -132,10 +133,14 @@ a:hover{
     margin-bottom: 30px;
     height: 40px;
     transition: all 0.5s ease;
+    &::-webkit-inner-spin-button{
+        -webkit-appearance: none;
+    }
+    &:focus{
+        border-bottom: 2px #2373fd solid;
+    }
 }
-.form-input:focus{
-    border-bottom: 2px #2373fd solid;
-}
+
 .image-container{
     height: 200px;
     width: 100%;

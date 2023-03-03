@@ -13,7 +13,6 @@ const PrivateRoutes=()=>{
     const [isLoaded,setIsLoaded] = useState(false);
     useLayoutEffect(()=>{
         const userData = localStorage.getItem("user");
-        console.log(userData);
         if(userData===null){
             setAuth(false)
         }else{
